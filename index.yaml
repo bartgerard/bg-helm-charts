@@ -1,0 +1,37 @@
+apiVersion: v1
+entries:
+  flink:
+  - apiVersion: v1
+    appVersion: 1.11.2
+    created: "2022-07-25T11:35:45.94163628Z"
+    dependencies:
+    - condition: zookeeper.enabled
+      name: zookeeper
+      repository: https://charts.helm.sh/incubator
+      version: 2.0.0
+    description: Chart for Apache Flink
+    digest: 0281216492c4e76b37f12bcd6bd8a1851ef744a9b74a54e04e9c2b6a206074b0
+    name: flink
+    urls:
+    - https://github.com/bartgerard/bg-helm-charts/releases/download/flink-0.0.3/flink-0.0.3.tgz
+    version: 0.0.3
+  flink_1_11:
+  - apiVersion: v1
+    appVersion: 1.11.2
+    created: "2022-07-25T11:35:46.185944519Z"
+    dependencies:
+    - condition: zookeeper.enabled
+      name: zookeeper
+      repository: https://charts.helm.sh/incubator
+      version: 2.0.0
+    description: Chart for Apache Flink
+    digest: 06f3e79fdceca4c8ad6d4a064e6f167985afa1e15d46f1370775b63621857ca8
+    home: https://github.com/riskfocus/helm-charts-public
+    maintainers:
+    - email: charts-maintainers@riskfocus.com
+      name: charts-maintainers
+    name: flink_1_11
+    urls:
+    - https://github.com/bartgerard/bg-helm-charts/releases/download/flink_1_11-0.0.3/flink_1_11-0.0.3.tgz
+    version: 0.0.3
+generated: "2022-07-25T11:35:46.18595022Z"
