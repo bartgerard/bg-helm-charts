@@ -1,6 +1,8 @@
 # Default values for mssql-latest.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
+agent:
+  enabled: true
 
 replicas: 1
 
@@ -17,7 +19,10 @@ MSSQL_PID:
 MSSQL_AGENT_ENABLED:
     value: "true"
 hostname: mssqllatest
-sa_password: "Toughpass1!"
+sa_password: "Admin123"
+existingSecret: ""
+existingSecretKey: sapassword
+
 containers:
   ports:
       containerPort: 1433
@@ -25,21 +30,21 @@ containers:
 podAnnotations: {}
 
 podSecurityContext:
-   fsGroup: 10001
+  fsGroup: 10001
 
 service:
   type: LoadBalancer
   port: 1433
 
 pvc:
- StorageClass: "azure-disk"
- userdbaccessMode: ReadWriteOnce
- userdbsize: 5Gi
- userlogaccessMode: ReadWriteOnce
- userlogsize: 5Gi
- tempdbaccessMode: ReadWriteOnce
- tempsize: 2Gi
- mssqldataaccessMode: ReadWriteOnce
- mssqldbsize: 2Gi
+  StorageClass: "azure-disk"
+  userdbaccessMode: ReadWriteOnce
+  userdbsize: 5Gi
+  userlogaccessMode: ReadWriteOnce
+  userlogsize: 5Gi
+  tempdbaccessMode: ReadWriteOnce
+  tempsize: 2Gi
+  mssqldataaccessMode: ReadWriteOnce
+  mssqldbsize: 2Gi
 
 
