@@ -34,4 +34,15 @@ entries:
     urls:
     - https://github.com/bartgerard/bg-helm-charts/releases/download/flink_1_11-0.0.3/flink_1_11-0.0.3.tgz
     version: 0.0.3
-generated: "2022-07-25T11:35:46.18595022Z"
+  mssql-latest:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-08-10T14:41:02.659632697Z"
+    description: MS SQL Server 2019
+    digest: 8e78ac2a320a9f043021433f644217d55c5bcbb5bd6359d79c97e11db8e04b98
+    name: mssql-latest
+    type: application
+    urls:
+    - https://github.com/bartgerard/bg-helm-charts/releases/download/mssql-latest-0.0.1/mssql-latest-0.0.1.tgz
+    version: 0.0.1
+generated: "2022-08-10T14:41:02.659651298Z"
